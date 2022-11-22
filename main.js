@@ -52,11 +52,9 @@ const clearError = () => {
     small.textContent = ''
 }
 
-
-
 const devolverPizza = (nombre, precio) => {
     return pizzasContainer.innerHTML = `
-        <h3>Resultado</h3>
+        <h3>Pizza</h3>
         <div id="pizza" class="pizza --color-celeste">
             <div class="left">
                 <p>🍕</p>
@@ -72,7 +70,7 @@ const devolverPizza = (nombre, precio) => {
 
 const clerearResultado = () => {
     return pizzasContainer.innerHTML = `
-        <h3>Resultado</h3>
+        <h3>Pizza</h3>
     `
 }
 
@@ -90,7 +88,7 @@ const boton = document.getElementById('button').addEventListener('click', (e) =>
                 showError('no ingresó valor')
                 clerearResultado()
             } else if (idPizza > element.id) {
-               showError('no existe')
+               showError('no existe una pizza con ese ID')
                clerearResultado()
             } else {
                 clearError()
