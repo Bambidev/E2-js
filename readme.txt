@@ -1,1 +1,1 @@
-Deply: https://e2-js-lemon.vercel.app/
+Deploy: https://e2-js-lemon.vercel.app/
